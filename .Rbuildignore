@@ -6,3 +6,7 @@
 ^README\.Rmd$
 ^LICENSE\.md$
 ^\.lintr$
+^\.travis\.yml$
+^codecov\.yml$
+^appveyor\.yml$
+
