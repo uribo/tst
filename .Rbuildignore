@@ -1,0 +1,8 @@
+^tst\.Rproj$
+^\.Rproj\.user$
+^Dockerfile$
+^docker-compose\.yml$
+^data-raw$
+^README\.Rmd$
+^LICENSE\.md$
+^\.lintr$

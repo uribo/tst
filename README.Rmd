@@ -1,0 +1,40 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+# tst
+
+The goal of **tst** is geo-spatial data testing using the 'testthat' package frameworks. Geo Spatial Data tests including CRS, geometry types, spetial relatons and units correctly.
+
+## Installation
+
+You can install the develop version of tst from [GitHub](https://github.com) with:
+
+``` r
+# install.packages("remotes")
+remotes::install_github("uribo/remotes")
+```
+
+## Example
+
+```{r}
+library(sf)
+x <- st_point(c(0, 0))
+expect_geom_type(x, "POINT") # TRUE
+```
+
+```{r, eval = FALSE, echo = TRUE}
+expect_geom_type(x, "POLYGON") # FALSE
+```
+
+
