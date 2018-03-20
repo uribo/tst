@@ -53,7 +53,7 @@ expect_crs(sf, 4326)
 
 ### Scope
 
-We will compatible to the objects provided by the following packages. Please write the [issue]() if there is a request with other methods. We welcome your contribution.
+We will compatible to the objects provided by the following packages. Please write the [issue](https://github.com/uribo/tst/issues/new) if there is a request with other methods. We welcome your contribution :)
 
 -   \[x\] sf (currently working in progress)
 -   \[ \] sp
