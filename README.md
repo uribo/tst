@@ -33,7 +33,35 @@ expect_geom_type(x, "POINT") # TRUE
 
 ``` r
 expect_geom_type(x, "POLYGON") # FALSE
+#  Error: `x`, geometry type is POINT, not POLYGON. 
 ```
+
+``` r
+sfc <- st_sfc(st_point(c(0, 0)),
+              st_point(c(1, 1)))
+sf <- st_sf(a = 1:2, geom = sfc)
+st_crs(sf) <- 4326
+
+expect_crs(sf, 4326)
+```
+
+### API
+
+-   `expect_geom_type()`
+-   `expect_crs()`
+-   ...
+
+### Scope
+
+We will compatible to the objects provided by the following packages. Please write the [issue]() if there is a request with other methods. We welcome your contribution.
+
+-   \[x\] sf (currently working in progress)
+-   \[ \] sp
+-   \[ \] raster
+-   \[ \] stars
+-   \[ \] units
+-   \[ \] geojson
+-   \[ \] ...
 
 Code of Conduct
 ---------------
