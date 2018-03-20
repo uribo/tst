@@ -9,7 +9,7 @@ expect_geom_type(object, type = c("POINT", "LINESTRING", "POLYGON",
   "MULTIPOINT", "MULTISTRING", "MULTIPOLYGON", "GEOMETRYCOLLECTION"))
 }
 \arguments{
-\item{object}{object of class \href{sf::sf}{sf} or \href{sf::sfc}{sfc}}
+\item{object}{object of class \code{\link[sf]{sf}} or \code{\link[sf]{sfc}}}
 
 \item{type}{test equality geometry type (\code{character})}
 }

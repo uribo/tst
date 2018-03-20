@@ -4,7 +4,7 @@
 #' @import testthat
 #' @importFrom rlang enquo
 #'
-#' @param object object of class [sf](sf::sf) or [sfc](sf::sfc)
+#' @param object object of class \code{\link[sf]{sf}} or \code{\link[sf]{sfc}}
 #' @param type test equality geometry type (`character`)
 #'
 #' @name expect_geometry
