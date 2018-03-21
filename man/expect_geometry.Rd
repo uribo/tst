@@ -3,18 +3,30 @@
 \name{expect_geometry}
 \alias{expect_geometry}
 \alias{expect_geom_type}
+\alias{expect_dimension}
 \title{Expect geometry type}
 \usage{
 expect_geom_type(object, type = c("POINT", "LINESTRING", "POLYGON",
   "MULTIPOINT", "MULTISTRING", "MULTIPOLYGON", "GEOMETRYCOLLECTION"))
+
+expect_dimension(object, value)
 }
 \arguments{
 \item{object}{object of class \code{\link[sf]{sf}} or \code{\link[sf]{sfc}}}
 
 \item{type}{test equality geometry type (\code{character})}
+
+\item{value}{expected value}
 }
 \description{
 Expect geometry type
+}
+\details{
+\itemize{
+\item \code{expect_geom_type()}: test with which geometry type
+\item \code{expect_dimention()}: test with N's spatial dimension of geometry. Expect values are 0 for points,
+1 for lines, 2 for planar.
+}
 }
 \examples{
 library(sf)
