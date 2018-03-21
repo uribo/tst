@@ -23,13 +23,15 @@ Expect geometry type
 }
 \details{
 \itemize{
-\item \code{expect_geom_type()}: test with which geometry type
+\item \code{expect_geom_type()}: test with which geometry type. See also \code{\link[sf]{st_geometry_type}}.
 \item \code{expect_dimention()}: test with N's spatial dimension of geometry. Expect values are 0 for points,
-1 for lines, 2 for planar.
+1 for lines, 2 for planar and NA for empty. See \code{\link[sf]{st_dimension}} to more details.
 }
 }
 \examples{
 library(sf)
 x <- st_point(c(0, 0))
 expect_geom_type(x, "POINT")
+
+expect_dimension(x, 0) # For point
 }
