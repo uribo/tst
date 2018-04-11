@@ -22,4 +22,8 @@ test_that("dimension", {
   expect_silent(expect_dimension(sf_point, "0"))
   expect_silent(expect_dimension(sf_line,
                                  1))
+  expect_silent(expect_dimension(st_linestring(), value = NA))
+  expect_silent(expect_dimension(st_linestring(), NA_character_))
+  expect_silent(expect_dimension(st_linestring(), NA))
+
 })
