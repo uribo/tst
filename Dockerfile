@@ -1,4 +1,4 @@
-FROM rocker/geospatial:3.4.3
+FROM rocker/geospatial:3.4.4
 RUN apt-get update
 
 # Imports and Suggests

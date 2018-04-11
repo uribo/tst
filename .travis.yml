@@ -17,7 +17,6 @@ before_install:
 
 r_github_packages:
   - jimhester/lintr
-  - r-lib/lobstr
 
 after_success:
   - Rscript -e 'covr::codecov(); lintr::lint_package()'

@@ -9,6 +9,8 @@ tst <img src="man/figures/logo.png" align="right" width="120px" />
 
 The goal of **tst** is geo-spatial data testing using the 'testthat' package frameworks. Geo Spatial Data tests including CRS, geometry types, spetial relatons and units correctly.
 
+> NOTES tst: total station theodolite is an electronic/optical instrument used for surveying and building construction.
+
 Installation
 ------------
 
@@ -45,10 +47,12 @@ st_crs(sf) <- 4326
 expect_crs(sf, 4326)
 ```
 
-### API
+### APIs
 
 -   `expect_geom_type()`
 -   `expect_crs()`
+-   `expect_dimension()`
+-   `expect_units()`
 -   ...
 
 ### Scope
@@ -59,7 +63,7 @@ We will compatible to the objects provided by the following packages. Please wri
 -   \[ \] sp
 -   \[ \] raster
 -   \[ \] stars
--   \[ \] units
+-   \[x\] units (currently working in progress)
 -   \[ \] geojson
 -   \[ \] ...
 

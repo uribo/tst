@@ -18,7 +18,8 @@ Imports:
     glue (>= 1.2.0),
     rlang (>= 0.2.0),
     sf (>= 0.6.0),
-    testthat (>= 2.0.0)
+    testthat (>= 2.0.0),
+    units (>= 0.5-1)
 Suggests: 
     covr (>= 3.0.1),
     lintr (>= 1.0.2)
