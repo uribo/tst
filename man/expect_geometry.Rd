@@ -7,7 +7,7 @@
 \title{Expect geometry type}
 \usage{
 expect_geom_type(object, type = c("POINT", "LINESTRING", "POLYGON",
-  "MULTIPOINT", "MULTISTRING", "MULTIPOLYGON", "GEOMETRYCOLLECTION"))
+  "MULTIPOINT", "MULTILINESTRING", "MULTIPOLYGON", "GEOMETRYCOLLECTION"))
 
 expect_dimension(object, value)
 }

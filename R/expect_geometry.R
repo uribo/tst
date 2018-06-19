@@ -28,7 +28,7 @@ NULL
 expect_geom_type <- function(object,
                              type = c(
                                "POINT", "LINESTRING", "POLYGON",
-                               "MULTIPOINT", "MULTISTRING", "MULTIPOLYGON",
+                               "MULTIPOINT", "MULTILINESTRING", "MULTIPOLYGON",
                                "GEOMETRYCOLLECTION"
                              )) {
   type <- match.arg(type)
