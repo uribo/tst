@@ -1,3 +1,4 @@
+^\.env$
 ^tst\.Rproj$
 ^\.Rproj\.user$
 ^Dockerfile$
