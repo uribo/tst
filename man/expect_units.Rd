@@ -2,7 +2,6 @@
 % Please edit documentation in R/expect_units.R
 \name{expect_units}
 \alias{expect_units}
-\alias{expect_units}
 \title{Expect a units}
 \usage{
 expect_units(object, units = NULL)

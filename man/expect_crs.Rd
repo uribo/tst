@@ -2,7 +2,6 @@
 % Please edit documentation in R/expect_crs.R
 \name{expect_crs}
 \alias{expect_crs}
-\alias{expect_crs}
 \title{Expect coordinate reference systems}
 \usage{
 expect_crs(object, epsg = NULL, proj4string = NULL)
